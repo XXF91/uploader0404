@@ -3,12 +3,12 @@ import os
 class Config(object):
 
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("1916166816:AAFw6-yxZOFLkR-FRSp4rsgc_jToRifUiUM", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7029383019:AAGmgfEwT17E-w9wkbhHAiJF1aHrEKLxMfk")
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("4674611", 12345))
-    API_HASH = os.environ.get("65094863055d68954505ce9d6eef6aa1")
+    APP_ID = int(os.environ.get("APP_ID", 13384432))
+    API_HASH = os.environ.get("API_HASH","ea9db4503ed7088b788e06dfd818e00e")
 
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
@@ -43,7 +43,7 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3600
 
     # watermark file
-    DEF_WATER_MARK_FILE = "@URLUPPROBOT"
+    DEF_WATER_MARK_FILE = "@X_XF8"
 
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mrhex86:mrhex86@cluster0.8pxiirj.mongodb.net/?retryWrites=true&w=majority")
